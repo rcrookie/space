@@ -71,28 +71,28 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       document.querySelector('header').appendChild(app.xrButton.domElement);
 
       app.scene.addNode(new SkyboxNode({url: '../media/textures/eilenriede-park-2k.png'}));
-      //let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_2_by_2.glb'}); // FPS TEST
-	  //let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_3.glb'}); // Loading TEST
+	//let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_2_by_2.glb'}); // FPS TEST
+	let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_3.glb'}); // Transfer Speed TEST
 	  
-		//let GH_City  = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_1.glb'}); // Loading TEST
-		//let GH_City2 = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_2.glb'}); // Loading TEST
-		//let GH_City3 = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_3.glb'}); // Loading TEST
+	//let GH_City  = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_1.glb'}); // Loading TEST
+	//let GH_City2 = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_2.glb'}); // Loading TEST
+	//let GH_City3 = new Gltf2Node({url: '../media/gltf/GH_City/GH_L17_Core_3_by_3_part_3.glb'}); // Loading TEST
 
-		let GH_City  = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_1.glb'}); // Loading TEST
-		let GH_City2 = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_2.glb'}); // Loading TEST
-		let GH_City3 = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_3.glb'}); // Loading TEST
+	//let GH_City  = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_1.glb'}); // Loading TEST
+	//let GH_City2 = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_2.glb'}); // Loading TEST
+	//let GH_City3 = new Gltf2Node({url: '../media/gltf/GH_City/L17_Low_Core_4_by_4_part_3.glb'}); // Loading TEST
 		
 	  //vec3.set(GH_City.scale, 0.01, 0.01, 0.01);
 	  mat4.translate(GH_City.matrix, GH_City.matrix, [-250.0, -100.0, -100.0]);
-	  mat4.translate(GH_City2.matrix, GH_City2.matrix, [-250.0, -100.0, -100.0]);
-	  mat4.translate(GH_City3.matrix, GH_City3.matrix, [-250.0, -100.0, -100.0]);
+	  //mat4.translate(GH_City2.matrix, GH_City2.matrix, [-250.0, -100.0, -100.0]);
+	  //mat4.translate(GH_City3.matrix, GH_City3.matrix, [-250.0, -100.0, -100.0]);
       
 	  // Rotate the scene 90deg so that you start looking down the gallery.
       //quat.rotateY(GH_City.rotation, GH_City.rotation, Math.PI / 2.0);
 
       app.scene.addNode(GH_City);
-	  app.scene.addNode(GH_City2);
-	  app.scene.addNode(GH_City3);
+	//app.scene.addNode(GH_City2);
+	//app.scene.addNode(GH_City3);
       app.scene.standingStats(true);
 	  
 

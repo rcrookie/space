@@ -68,7 +68,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       	document.querySelector('header').appendChild(app.xrButton.domElement);
 
       	app.scene.addNode(new SkyboxNode({url: '../media/textures/eilenriede-park-2k.png'}));
-	let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/Tile_Tile9_2_0_MB_KSR_5_by_4.glb'}); // FPS TEST
+	//let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/Tile_Tile9_2_0_MB_KSR_5_by_4.glb'}); // FPS TEST
+	let GH_City = new Gltf2Node({url: '../media/gltf/GH_City/Tile_Tile9_2_0_MB_KSR_5_by_4_wo_VertexColor.glb'}); // FPS TEST
+	    
 
 	//vec3.set(GH_City.scale, 0.01, 0.01, 0.01);
 	mat4.translate(GH_City.matrix, GH_City.matrix, [-250.0, -100.0, -100.0]);
